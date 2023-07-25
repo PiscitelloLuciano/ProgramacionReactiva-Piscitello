@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ProgramacionReactiva-Piscitello": {
+    "ReactiveProgram-Piscitello": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,21 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/programacion-reactiva-piscitello",
+            "outputPath": "dist/reactive-program-piscitello",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -65,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ProgramacionReactiva-Piscitello:build:production"
+              "browserTarget": "ReactiveProgram-Piscitello:build:production"
             },
             "development": {
-              "browserTarget": "ProgramacionReactiva-Piscitello:build:development"
+              "browserTarget": "ReactiveProgram-Piscitello:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,29 +69,24 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ProgramacionReactiva-Piscitello:build"
+            "browserTarget": "ReactiveProgram-Piscitello:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f4b4f002-0352-4594-ba10-0d7ea4999248"
   }
 }

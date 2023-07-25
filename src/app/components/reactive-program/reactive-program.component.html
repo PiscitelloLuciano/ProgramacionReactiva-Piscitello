@@ -1,0 +1,13 @@
+<h1>Programacion reactiva</h1>
+<h4>Ejemplo de promesa</h4>
+<div>
+  {{ promesa | async }}
+</div>
+<h4>Ejemplo de Observable con filtro y onDestroy</h4>
+<span
+  >Utilicé el filtro toUpperCase para la palabra <b>CONTADOR</b> y se detiene en
+  el número 10 gracias al OnDestroy
+</span>
+<ul>
+  <li *ngFor="let data of observable" style="font-size: 20px">{{ data }}</li>
+</ul>
